@@ -1,7 +1,13 @@
-# estore
+# BITS Online Store
 
 This is a "gateway" application intended to be part of a microservice architecture.
-This application is configured for Service Discovery and Configuration with the JHipster-Registry. On launch, it will refuse to start if it is not able to connect to the JHipster-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the JHipster-Registry][].
+This application is configured for Service Discovery and Configuration with the JHipster-Registry. On launch, it will refuse to start if it is not able to connect to the JHipster-Registry at [http://localhost:8761](http://localhost:8761). 
+
+For more information on running the JHipster Registry using docker please read below.
+### Using Docker
+If you’d rather run the JHipster Registry from a Docker image, it is available on Docker Hub at `jhipster/jhipster-registry`. A docker-compose file to run this image is already present within each microservice `src/main/docker` directory:
+
+run `docker-compose -f src/main/docker/jhipster-registry.yml` up to start the JHipster Registry. It will be available on port `8761` of your Docker host, so if it runs on your machine it should be at http://127.0.0.1:8761/.
 
 ## Project Structure
 
