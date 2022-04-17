@@ -7,7 +7,9 @@ For more information on running the JHipster Registry using docker please read b
 ### Using Docker
 If you’d rather run the JHipster Registry from a Docker image, it is available on Docker Hub at `jhipster/jhipster-registry`. A docker-compose file to run this image is already present within each microservice `src/main/docker` directory:
 
-run `docker-compose -f src/main/docker/jhipster-registry.yml` up to start the JHipster Registry. It will be available on port `8761` of your Docker host, so if it runs on your machine it should be at http://127.0.0.1:8761/.
+run `docker-compose -f src/main/docker/jhipster-registry.yml up -d` up to start the JHipster Registry. It will be available on port `8761` of your Docker host, so if it runs on your machine it should be at http://127.0.0.1:8761/.
+
+Note: While running docker-compose command, if you receive a following message such as "Docker Compose is now in the Docker CLI, try `docker compose`", then try running the command `docker-compose disable-v2`. This would disable the docker v2 and enable you to run docker-compose command seamlessly.
 
 ## Project Structure
 
