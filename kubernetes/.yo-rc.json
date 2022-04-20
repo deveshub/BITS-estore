@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["estore", "invoice", "notification"],
+    "clusteredDbApps": [],
+    "directoryPath": "../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "bitsassignment2020",
+    "ingressDomain": "",
+    "istio": false,
+    "jwtSecretKey": "ODBkNzk5YzYwYTcxOTA5YTVjZmExMzM1NmIzNWY1MGIwYmJhOWJlZjZhMmU0Yjg3NmJkMmI4YjcwZGQyY2IyMmRkNjM3M2U0ZTUwOGMyMzVhYmE3YjlkMTA2YzdlZDZjOTU5Mg==",
+    "kubernetesNamespace": "bits-k8s-ns",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesUseDynamicStorage": false,
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka"
+  }
+}

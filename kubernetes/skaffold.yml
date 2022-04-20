@@ -1,0 +1,18 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: bitsassignment2020/estore
+      context: ../estore
+      jib: {}
+    - image: bitsassignment2020/invoice
+      context: ../invoice
+      jib: {}
+    - image: bitsassignment2020/notification
+      context: ../notification
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}
