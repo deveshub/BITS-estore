@@ -7,7 +7,6 @@ Main page styles
   width: 347px;
   height: 197px;
   margin-top: 20%;
-  // background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
   background-size: contain;
   border: 1px solid #f8f8f8;
   border-radius: 50px;
@@ -21,7 +20,9 @@ Main page styles
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .hipster {
-    background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
-    background-size: contain;
+  background-size: contain;
+  border: 1px solid #f8f8f8;
+  border-radius: 50px;
+  padding: 15% 10%;
   }
 }
